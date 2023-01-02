@@ -1,0 +1,16 @@
+server:
+  port: 8181
+  
+spring:
+  application:
+    name: CUSTOMER-APP
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    password: ${DB_PASSWORD:shubh123456}
+    url: ${JDBC_URL:jdbc:mariadb://localhost:3306/employee}
+    username: ${DB_USER:root}
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
